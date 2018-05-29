@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from '@auth0/cosmos'
 
 class App extends Component {
   render() {
@@ -13,6 +14,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button appearance="primary" onClick={this.save}>Save changes</Button>
+        <Button onClick={this.clear}>Clear</Button>
       </div>
     );
   }
